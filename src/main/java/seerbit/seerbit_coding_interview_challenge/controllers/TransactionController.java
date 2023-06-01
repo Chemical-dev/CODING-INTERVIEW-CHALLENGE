@@ -14,9 +14,8 @@ import seerbit.seerbit_coding_interview_challenge.services.TransactionService;
 @NoArgsConstructor
 @Setter
 @AllArgsConstructor
-@Tag(name = "my api")
 @RestController
-@RequestMapping("/transaction")
+@RequestMapping("/")
 public class TransactionController {
 
     @Autowired
