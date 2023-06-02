@@ -1,9 +1,10 @@
-package seerbit.seerbit_coding_interview_challenge.controllers;
+package seerbit.seerbit_coding_interview_challenge.integration;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import seerbit.seerbit_coding_interview_challenge.controllers.TransactionController;
 import seerbit.seerbit_coding_interview_challenge.requests.TransactionRequest;
 import seerbit.seerbit_coding_interview_challenge.responses.TransactionStatistics;
 import seerbit.seerbit_coding_interview_challenge.services.TransactionService;
@@ -15,9 +16,8 @@ import java.time.format.DateTimeFormatter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
-import static org.mockito.Mockito.times;
 
-class TransactionControllerTest {
+class TransactionIntegrationTest {
     private TransactionController transactionController = new TransactionController();
     private TransactionService transactionService = new TransactionService();
 
